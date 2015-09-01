@@ -41,12 +41,11 @@ all possible multiplex options.
 9. Whenever possible, power input (ie: VCC) shall be at the top and power return
 (ie: VSS) shall be at the bottom of the symbol.
 
-10. Symbols shall be named by the full manufacturer part number.  If there are
-variants of the part which would have the same exact symbol, [bash regular
-expressions][bash regex] may be used to substitute for a portion of the part
-number. In case two a part has multiple cases with different pin number
-assignment, then multiple symbols need to be created, as Kicad does not allow
-for a pin mapping.
+10. Symbols shall be named by the full manufacturer part number in upper-case.
+If there are variants of the part which would have the same exact symbol, [bash
+regular expressions][bash regex] may be used to substitute for a portion of the
+part number.  If a part has multiple package options which have different pin
+number assignments, then multiple symbols shall be created.
 
 11. For parts which have a thermal or ground pad (such as QFN package parts),
 the thermal or ground pad shall be the highest numbered pin and if the
