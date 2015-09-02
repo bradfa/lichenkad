@@ -73,8 +73,7 @@ and orientation.
 4. Pins shall have their type set to "Power Input".
 
 5. Pin names and numbers shall not be visible but must be set and use the name
-which corresponds to the power symbol name.  For AC symbols, the names end in
-"P" and "N".
+which corresponds to the power symbol name.
 
 6. The reference designator must start with the "#" character.
 
