@@ -13,11 +13,9 @@ extremely inconsistent, often low quality, and sometimes just plain wrong.
 
 All schematic symbols **must** follow these guidelines:
 
-1. There shall be one schematic symbol library per manufacturer.  If a
-manufacturer is a second source for another (ie: both make the same part number
-with the same function and packaging) then the perceived larger manufacturer
-takes precedence (ie: Maxim parts which are second sourced by Touchstone go in
-the Maxim library).
+1. There shall be one schematic symbol library per part type (ie: passives,
+op-amps, micros, power-ctrls, etc).  Schematic symbol library file names shall
+always be lower-case English plural nouns.
 
 2. Using a 100 mil grid, pin ends and origin shall lie on-grid.
 
