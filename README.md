@@ -56,10 +56,10 @@ name starts with a "~" character).
 [bash regex]:http://www.tldp.org/LDP/abs/html/x17129.html
 
 
-## Power Symbol Style Guide
+### Schematic Power Symbol Style Guide
 
 All power symbols, which are automatically global nets in a schematic, **must**
-follow these guidelines:
+follow these additional guidelines:
 
 1. All power symbols must reside within the `power.lib` schematic symbol
 library.
