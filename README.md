@@ -86,3 +86,27 @@ frequency, and the phases (ie: 3.3 VDC, 120 VAC RMS 60 HZ L-N, 208 VAC RMS 60 HZ
 L-L 3PH DELTA).  Ranges are allowed to be specified (ie: 90-264 VAC RMS 47-63 HZ
 L-L).
 
+
+## Layout Footprint Style Guide
+
+All layout footprints (modules) **must** follow these guidelines:
+
+1. Layout footprint libraries shall only use the new "pretty" KiCad footprint
+format.
+
+2. Layout footprints shall follow IPC recommendations for generic packages, as
+set out in IPC standards.
+
+3. There shall be one layout footprint library for each footprint type (ie: QFN,
+QFP, DIP, plug-jack, 2-pin, etc).
+
+4. There shall be one layout footprint library per manufacturer which contains
+only manufacturer specific footprints.  This type of footprint should be avoided
+and IPC compliant footprints used when ever possible.
+
+5. The origin should be placed in the middle of the footprint unless a more
+natural location for the origin exists (ie: middle pin of a right-angle RF
+connector or other very non-symmetric footprint).
+
+6. All dimensions shall be in mm.
+
