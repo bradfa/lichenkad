@@ -13,11 +13,9 @@ extremely inconsistent, often low quality, and sometimes just plain wrong.
 
 All schematic symbols **must** follow these guidelines:
 
-1. There shall be one schematic symbol library per manufacturer.  If a
-manufacturer is a second source for another (ie: both make the same part number
-with the same function and packaging) then the perceived larger manufacturer
-takes precedence (ie: Maxim parts which are second sourced by Touchstone go in
-the Maxim library).
+1. There shall be one schematic symbol library per part type (ie: passives,
+op-amps, micros, power-ctrls, etc).  Schematic symbol library file names shall
+always be lower-case English plural nouns.
 
 2. Using a 100 mil grid, pin ends and origin shall lie on-grid.
 
@@ -36,7 +34,8 @@ correspond to the manufacturer's naming convention in the data sheet.  Pins
 which are multiplexed should only contain the pin name and not a full list of
 all possible multiplex options.
 
-8. Whenever possible, inputs shall be on the left and outputs are on the right.
+8. Whenever possible, inputs shall be on the left and outputs shall be on the
+right.
 
 9. Whenever possible, power input (ie: VCC) shall be at the top and power return
 (ie: VSS) shall be at the bottom of the symbol.
@@ -55,13 +54,18 @@ PAD".
 12. Pins which are asserted low shall use a top-bar over their name (ie: pin
 name starts with a "~" character).
 
+13. Once a symbol is accepted into the library, its pin locations and origin
+must not change (due to KiCad not caching symbols within the schematic itself).
+A symbol may only have incorrect pin locations modified after acceptance into
+the library if the symbol's pins are incorrect.
+
 [bash regex]:http://www.tldp.org/LDP/abs/html/x17129.html
 
 
-## Power Symbol Style Guide
+### Schematic Power Symbol Style Guide
 
 All power symbols, which are automatically global nets in a schematic, **must**
-follow these guidelines:
+follow these additional guidelines:
 
 1. All power symbols must reside within the `power.lib` schematic symbol
 library.
@@ -75,8 +79,7 @@ and orientation.
 4. Pins shall have their type set to "Power Input".
 
 5. Pin names and numbers shall not be visible but must be set and use the name
-which corresponds to the power symbol name.  For AC symbols, the names end in
-"P" and "N".
+which corresponds to the power symbol name.
 
 6. The reference designator must start with the "#" character.
 
@@ -88,4 +91,28 @@ denote if the voltage is AC or DC, and if AC then also indicate if RMS, the
 frequency, and the phases (ie: 3.3 VDC, 120 VAC RMS 60 HZ L-N, 208 VAC RMS 60 HZ
 L-L 3PH DELTA).  Ranges are allowed to be specified (ie: 90-264 VAC RMS 47-63 HZ
 L-L).
+
+
+## Layout Footprint Style Guide
+
+All layout footprints (modules) **must** follow these guidelines:
+
+1. Layout footprint libraries shall only use the new "pretty" KiCad footprint
+format.
+
+2. Layout footprints shall follow IPC recommendations for generic packages, as
+set out in IPC standards.
+
+3. There shall be one layout footprint library for each footprint type (ie: QFN,
+QFP, DIP, plug-jack, 2-pin, etc).
+
+4. There shall be one layout footprint library per manufacturer which contains
+only manufacturer specific footprints.  This type of footprint should be avoided
+and IPC compliant footprints used when ever possible.
+
+5. The origin should be placed in the middle of the footprint unless a more
+natural location for the origin exists (ie: middle pin of a right-angle RF
+connector or other very non-symmetric footprint).
+
+6. All dimensions shall be in mm.
 
