@@ -34,7 +34,8 @@ correspond to the manufacturer's naming convention in the data sheet.  Pins
 which are multiplexed should only contain the pin name and not a full list of
 all possible multiplex options.
 
-8. Whenever possible, inputs shall be on the left and outputs are on the right.
+8. Whenever possible, inputs shall be on the left and outputs shall be on the
+right.
 
 9. Whenever possible, power input (ie: VCC) shall be at the top and power return
 (ie: VSS) shall be at the bottom of the symbol.
