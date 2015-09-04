@@ -54,6 +54,11 @@ PAD".
 12. Pins which are asserted low shall use a top-bar over their name (ie: pin
 name starts with a "~" character).
 
+13. Once a symbol is accepted into the library, its pin locations and origin
+must not change (due to KiCad not caching symbols within the schematic itself).
+A symbol may only have incorrect pin locations modified after acceptance into
+the library if the symbol's pins are incorrect.
+
 [bash regex]:http://www.tldp.org/LDP/abs/html/x17129.html
 
 
