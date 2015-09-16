@@ -1,4 +1,4 @@
-update=Fri 04 Sep 2015 05:37:33 AM EDT
+update=Wed 16 Sep 2015 04:47:17 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,10 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=
 [general]
 version=1
+[eeschema]
+version=1
+LibDir=symbols
+[eeschema/libraries]
+LibName1=symbols/passives
