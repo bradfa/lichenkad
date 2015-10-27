@@ -21,10 +21,10 @@ always be lower-case English plural nouns.
 
 3. The origin shall be placed in the middle of the symbol.
 
-4. Field texts shall use a size of 50 mils and should use only upper case
+4. Field texts should use a size of 60 mils and should use only upper case
 letters.
 
-5. Pins shall have a length of 200 mils.
+5. Pins should have a length of 200 mils and a text size of 50 mils.
 
 6. Whenever possible, pins shall be grouped logically (ie: by function set or
 port).
