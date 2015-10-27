@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Capacitor
+K capacitor, cap
+$ENDCMP
+#
+$CMP R
+D Resistor
+K resistor
+$ENDCMP
+#
+#End Doc Library

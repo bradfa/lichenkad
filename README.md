@@ -17,44 +17,46 @@ All schematic symbols **must** follow these guidelines:
 op-amps, micros, power-ctrls, etc).  Schematic symbol library file names shall
 always be lower-case English plural nouns.
 
-2. Using a 100 mil grid, pin ends and origin shall lie on-grid.
+2. Using a 50 mil grid, pin ends and origin shall lie on-grid.
 
 3. The origin shall be placed in the middle of the symbol.
 
-4. Field texts shall use a size of 50 mils and should use only upper case
+4. Field texts should use a size of 60 mils and should use only upper case
 letters.
 
-5. Pins shall have a length of 200 mils.
+5. Pins should have a length of 200 mils and a text size of 50 mils.
 
-6. Whenever possible, pins shall be grouped logically (ie: by function set or
+6. Pins should be spaced at least 100 mils from each other.
+
+7. Whenever possible, pins shall be grouped logically (ie: by function set or
 port).
 
-7. Pins shall have both a name and a number assigned and visible which
+8. Pins shall have both a name and a number assigned and visible which
 correspond to the manufacturer's naming convention in the data sheet.  Pins
 which are multiplexed should only contain the pin name and not a full list of
 all possible multiplex options.
 
-8. Whenever possible, inputs shall be on the left and outputs shall be on the
+9. Whenever possible, inputs shall be on the left and outputs shall be on the
 right.
 
-9. Whenever possible, power input (ie: VCC) shall be at the top and power return
+10. Whenever possible, power input (ie: VCC) shall be at the top and power return
 (ie: VSS) shall be at the bottom of the symbol.
 
-10. Symbols shall be named by the full manufacturer part number in upper-case.
+11. Symbols shall be named by the full manufacturer part number in upper-case.
 If there are variants of the part which would have the same exact symbol, [bash
 regular expressions][bash regex] may be used to substitute for a portion of the
 part number.  If a part has multiple package options which have different pin
 number assignments, then multiple symbols shall be created.
 
-11. For parts which have a thermal or ground pad (such as QFN package parts),
+12. For parts which have a thermal or ground pad (such as QFN package parts),
 the thermal or ground pad shall be the highest numbered pin and if the
 manufacturer does not provide a name for this pin it shall be called "THERMAL
 PAD".
 
-12. Pins which are asserted low shall use a top-bar over their name (ie: pin
+13. Pins which are asserted low shall use a top-bar over their name (ie: pin
 name starts with a "~" character).
 
-13. Once a symbol is accepted into the library, its pin locations and origin
+14. Once a symbol is accepted into the library, its pin locations and origin
 must not change (due to KiCad not caching symbols within the schematic itself).
 A symbol may only have incorrect pin locations modified after acceptance into
 the library if the symbol's pins are incorrect.
