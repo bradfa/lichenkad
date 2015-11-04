@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VDD
+D VDD
+$ENDCMP
+#
+#End Doc Library
