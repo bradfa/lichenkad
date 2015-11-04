@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP GND
+D GND
+$ENDCMP
+#
 $CMP VDD
 D VDD
 $ENDCMP
