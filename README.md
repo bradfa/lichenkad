@@ -75,13 +75,12 @@ library.
 2. There shall be only 1 pin per power symbol for DC voltages and 1 pin per
 phase per power symbol for AC voltages (single phase AC is 2 phases!).
 
-3. Pins shall have a length of 0, so there is no confusion as to its location
-and orientation.
+3. Pins shall have a length of 0 and be set to not be visible.
 
 4. Pins shall have their type set to "Power Input".
 
-5. Pin names and numbers shall not be visible but must be set and use the name
-which corresponds to the power symbol name.
+5. Pin names shall not be visible but must be set and use the name which
+corresponds to the power symbol name.
 
 6. The reference designator must start with the "#" character.
 
