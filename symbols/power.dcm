@@ -4,4 +4,8 @@ $CMP VDD
 D VDD
 $ENDCMP
 #
+$CMP VSS
+D VSS
+$ENDCMP
+#
 #End Doc Library
