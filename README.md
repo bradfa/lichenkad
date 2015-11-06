@@ -15,7 +15,8 @@ All schematic symbols **must** follow these guidelines:
 
 1. There shall be one schematic symbol library per part type (ie: passives,
 op-amps, micros, power-ctrls, etc).  Schematic symbol library file names shall
-always be lower-case English plural nouns.
+always be lower-case English plural nouns except for `power.lib` due to KiCad
+naming requirements for the power symbol library.
 
 2. Using a 50 mil grid, pin ends and origin shall lie on-grid.
 
