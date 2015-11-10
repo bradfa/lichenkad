@@ -15,7 +15,8 @@ All schematic symbols **must** follow these guidelines:
 
 1. There shall be one schematic symbol library per part type (ie: passives,
 op-amps, micros, power-ctrls, etc).  Schematic symbol library file names shall
-always be lower-case English plural nouns.
+always be lower-case English plural nouns except for `power.lib` due to KiCad
+naming requirements for the power symbol library.
 
 2. Using a 50 mil grid, pin ends and origin shall lie on-grid.
 
@@ -75,13 +76,12 @@ library.
 2. There shall be only 1 pin per power symbol for DC voltages and 1 pin per
 phase per power symbol for AC voltages (single phase AC is 2 phases!).
 
-3. Pins shall have a length of 0, so there is no confusion as to its location
-and orientation.
+3. Pins shall have a length of 0 and be set to not be visible.
 
 4. Pins shall have their type set to "Power Input".
 
-5. Pin names and numbers shall not be visible but must be set and use the name
-which corresponds to the power symbol name.
+5. Pin names shall not be visible but must be set and use the name which
+corresponds to the power symbol name.
 
 6. The reference designator must start with the "#" character.
 

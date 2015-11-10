@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +12VDC
+D +12VDC
+$ENDCMP
+#
+$CMP +3.3VDC
+D +3.3VDC
+$ENDCMP
+#
+$CMP +5VDC
+D +5VDC
+$ENDCMP
+#
+$CMP EARTH
+D EARTH
+$ENDCMP
+#
+$CMP GND
+D GND
+$ENDCMP
+#
+$CMP VDD
+D VDD
+$ENDCMP
+#
+$CMP VSS
+D VSS
+$ENDCMP
+#
+#End Doc Library
