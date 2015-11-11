@@ -5,6 +5,11 @@ D Capacitor
 K capacitor, cap
 $ENDCMP
 #
+$CMP C-POL
+D Capacitor Polarized
+K capacitor, cap
+$ENDCMP
+#
 $CMP L
 D Inductor
 K inductor
