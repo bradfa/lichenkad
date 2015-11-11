@@ -1,4 +1,4 @@
-update=Tue 03 Nov 2015 07:29:47 PM EST
+update=Mon 16 Nov 2015 06:37:17 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,3 +31,4 @@ LibDir=symbols
 [eeschema/libraries]
 LibName1=symbols/passives
 LibName2=symbols/power
+LibName3=symbols/diodes
