@@ -5,4 +5,9 @@ D Diode
 K diode
 $ENDCMP
 #
+$CMP LED
+D Light Emitting Diode
+K led
+$ENDCMP
+#
 #End Doc Library
