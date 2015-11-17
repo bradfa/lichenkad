@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP D
+D Diode
+K diode
+$ENDCMP
+#
+$CMP LED
+D Light Emitting Diode
+K led
+$ENDCMP
+#
+#End Doc Library
